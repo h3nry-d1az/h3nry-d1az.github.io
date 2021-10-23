@@ -6,7 +6,6 @@ Así que, si estos son algunos de tus temas favoritos, no dudes
 en leer algunas de mis publicaciones, te aseguro que te
 entretendrás por un rato. Te doy las gracias de antemano 😊.
 
-<br>
 <div align=center>
   <hr width="250">
 </div>
