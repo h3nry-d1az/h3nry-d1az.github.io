@@ -18,7 +18,7 @@ youtube_username: "H3nry D1az"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-theme: hacker
+theme: minima
 
 timezone: Etc/UTC
 future: false
