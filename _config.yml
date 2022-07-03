@@ -1,6 +1,6 @@
 title: "Henry²"
-author: "Henry Díaz"
-description: "Un pequeño blog en el que hablo sobre matemáticas, y ciencias de la computación principalmente." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+author: "Henry Díaz Bordón"
+description: "Un pequeño blog en castellano en el que hablamos sobre matemáticas y programación principalmente."
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
@@ -18,7 +18,10 @@ youtube_username: "H3nry D1az"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-theme: "minima"
+theme: hacker
+
+timezone: Etc/UTC
+future: false
 
 rss: rss
 
