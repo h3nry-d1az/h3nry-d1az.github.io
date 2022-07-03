@@ -18,7 +18,7 @@ youtube_username: "H3nry D1az"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-remote_theme: pages-themes/hacker@v0.2.0
+theme: minima
 
 timezone: Etc/UTC
 future: false
@@ -32,7 +32,6 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-remote-theme
 
 titles_from_headings:
   strip_title: true
