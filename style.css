@@ -1,0 +1,15 @@
+#blog-header {
+    text-align: center;
+    font-family: 'CMU Serif';
+    font-size: larger;
+}
+
+body {
+    padding: 25px 15% 75px;
+    background-color: #e0e0e0;
+    font-family: 'Merriweather', serif;
+}
+
+a {
+    text-decoration: none;
+}
