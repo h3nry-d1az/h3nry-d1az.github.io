@@ -31,7 +31,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
-        onload="renderMathInElement(document.body);"></script>
+        onload="renderMathInElement(document.body,
+        {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '\\[', right: '\\]', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false}
+            ]
+        });"></script>
     <!-- end KaTeX support -->
 </head>
 <body class="line-numbers">
@@ -57,8 +65,9 @@
     </div>
     Seguidamente, se listan todos y cada unos de mis artículos hasta el momento junto con sus respectivas fechas de publicación, puede acceder a cualquiera de ellos haciendo click sobre éstos:
     <br>
+    <br>
     <ul id="publications">
-        <li style="font-family: CMU Serif; font-size: calc(6px + 1vw); font-weight: bolder;">Publicación #1</li>
+        <li style="font-family: CMU Serif; font-size: calc(6px + 1vw); font-weight: bolder;">23 de mayo de 2022. <a href="https://h3nry-d1az.github.io/2022/05/23/pirho.pdf">$\Pi_{\rho}$: Un lenguaje de programación esotérico basado en el teorema fundamental de la aritmética.</a></li>
     </ul>
     </div>
 
