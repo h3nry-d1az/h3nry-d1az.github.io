@@ -1,16 +1,64 @@
 #blog-header {
     text-align: center;
     font-family: 'CMU Serif';
-    font-size: larger;
+    font-size: calc(5px + 1vw);
+}
+
+#blog-footers {
+    display: flex;
+}
+
+.column {
+    float: left;
+}
+
+#left-column {
+    font-size: calc(5px + 1vw);
+    width: 35%;
+}
+
+#right-column {
+    width: 65%;
+}
+
+#footer-links {
+    text-align: center;
+    font-family: 'CMU Serif';
+    font-size: calc(2px + 1vw);
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%;
+}
+
+.page-content {
+    font-family: 'Merriweather', serif;
+    font-size: calc(1px + 1vw);
+}
+
+.page-content::first-letter {
+    font-family: 'CMU Serif';
+    font-size: calc(20px + 1vw);
+    font-weight: bolder;
+	margin: 8px;
+	float: left;
 }
 
 body {
-    padding: 25px 15% 75px;
+    padding: 25px 17vw 75px;
     background-color: #e0e0e0;
-    font-family: 'Merriweather', serif;
+    line-height: calc(1.0005em + 1.1vw);
+}
+
+#header {
+    font-family: 'CMU Serif';
+    font-weight: bolder;
 }
 
 a {
     text-decoration: none;
     color: blue;
+}
+
+hr {
+    width: 70%;
 }
