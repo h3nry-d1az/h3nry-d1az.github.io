@@ -32,12 +32,12 @@
 
 .page-content {
     font-family: 'Merriweather', serif;
-    font-size: calc(1px + 1vw);
+    font-size: calc(2px + 1vw);
 }
 
 .page-content::first-letter {
     font-family: 'CMU Serif';
-    font-size: calc(20px + 1vw);
+    font-size: calc(15px + 2vw);
     font-weight: bolder;
 	margin: 8px;
 	float: left;
