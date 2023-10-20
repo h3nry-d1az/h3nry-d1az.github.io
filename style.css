@@ -31,8 +31,12 @@
 }
 
 .page-content {
-    font-family: 'Merriweather', serif;
-    font-size: calc(2px + 1vw);
+    font-family: 'Neuton', serif;
+    font-size: calc(7px + 1vw);
+}
+
+.dijkstra-quote {
+    font-size: calc(5px + 1vw);
 }
 
 .page-content::first-letter {
