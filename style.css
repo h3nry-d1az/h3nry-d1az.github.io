@@ -66,3 +66,7 @@ a {
 hr {
     width: 70%;
 }
+
+li {
+    margin: 20px 0;
+}
