@@ -1,0 +1,11 @@
+!! IMPORTANT !!
+
+This theme has by no means been made by me,
+it is a fork of Lucas Ramage's BOOSTRA.386
+with the aim of including additional features,
+such as LaTeX support and syntax highlighting.
+
+The original code is available at:
+ https://gitlab.com/lramage/mkdocs-bootstrap386
+
+Therefore, all credit belongs to him.

@@ -8,9 +8,17 @@ copyright: © 2024 All Rights Reserved.
 
 theme:
   name: bootstrap386
+  custom_dir: theme/
   locale: en
   logo: assets/logo.png
 
 nav:
   - Home: index.md
   - About: about.md
+  - Posts:
+    - Example 1: posts/example.md
+
+markdown_extensions:
+  codehilite:
+    guess_lang: true
+    use_pygments: true
