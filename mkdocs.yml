@@ -1,0 +1,16 @@
+site_name: Henry Díaz Bordón
+site_url: https://h3nry-d1az.github.io/
+repo_url: https://github.com/h3nry-d1az/h3nry-d1az.github.io
+
+site_description: Yet another nerdy blog about computer science and math gobbledygook
+site_author: Henry Díaz Bordón
+copyright: © 2024 All Rights Reserved.
+
+theme:
+  name: bootstrap386
+  locale: en
+  logo: assets/logo.png
+
+nav:
+  - Home: index.md
+  - About: about.md
