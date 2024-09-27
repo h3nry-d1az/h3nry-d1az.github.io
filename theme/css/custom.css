@@ -1,0 +1,26 @@
+a {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+h1 {
+    background-color: #00aa00;
+    font-size: x-large;
+    color: aliceblue;
+}
+
+h1::before {
+    content: "# ";
+    color: yellow;
+}
+
+h2 {
+    background-color: #00aa00;
+    font-size: larger;
+    color: aliceblue;
+}
+
+h2::before {
+    content: "## ";
+    color: yellow;
+}
