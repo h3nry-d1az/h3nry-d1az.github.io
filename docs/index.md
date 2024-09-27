@@ -18,6 +18,11 @@ In conclusion, the following maxim pretty much summarizes what your thoughts sho
 >
 > --- Jude Morgan
 
+# Can I subscribe?
+Not currently, I'm very inexperienced with RSS Feed, so it's probably going to take a little while if not forever.
+
+In the meantime, why don't you just sit back, relax, and enjoy one of my posts? (I've heard they are quite good.)
+
 # What a cool aesthetic!
 Thanks! It's not mine, though. The original theme was [BOOSTRA.386](https://gitlab.com/lramage/mkdocs-bootstrap386), by Lucas Ramage -- which I forked in order to add \\(\LaTeX\\) support, syntax highlighting (which, by the way, is not working, and it's driving me nuts) and other fancy functionalities tailored to my needs.
 
