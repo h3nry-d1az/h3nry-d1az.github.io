@@ -15,8 +15,9 @@ theme:
 nav:
   - Home: index.md
   - About: about.md
+  - Publications: publications.md
   - Posts:
-    - Example 1: posts/example.md
+    - Example 1: posts/2024/example.md
 
 markdown_extensions:
   codehilite:

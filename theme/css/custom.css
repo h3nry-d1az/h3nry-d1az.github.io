@@ -1,8 +1,10 @@
+/* Hyperlinks */
 a {
     color: aliceblue;
     font-weight: bold;
 }
 
+/* Sections and subsections */
 h1 {
     background-color: #00aa00;
     font-size: x-large;
@@ -23,4 +25,67 @@ h2 {
 h2::before {
     content: "## ";
     color: yellow;
+}
+
+/* Theorems, lemmas, corollarii, ... */
+.theorem {
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.theorem::before {
+    content: "Theorem: ";
+    color: white;
+    font-weight: bold;
+}
+
+.lemma {
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.lemma::before {
+    content: "Lemma: ";
+    color: white;
+    font-weight: bold;
+}
+
+.corollarium {
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.corollarium::before {
+    content: "Corollarium: ";
+    color: white;
+    font-weight: bold;
+}
+
+.definition {
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.definition::before {
+    content: "Definition: ";
+    color: white;
+    font-weight: bold;
+}
+
+.proof {
+    padding: 10px;
+}
+
+.proof::before {
+    content: "Proof: ";
+    color: white;
+    font-style: italic;
+}
+
+.proof::after {
+    color: black;
+    float: right;
+    text-shadow: #fff 0px 0px 5px;
+    -webkit-font-smoothing: antialiased;
+    content: "∎";
 }

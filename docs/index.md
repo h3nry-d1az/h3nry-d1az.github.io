@@ -15,8 +15,6 @@ In terms of math, I do have a strange fascination with set theory, but I'm well 
 
 In conclusion, the following maxim pretty much summarizes what your thoughts should be when reading one of my articles ¯\\\_(ツ)_/¯:
 > “No expectations mean there is no risk of disappointment.”
->
-> --- Jude Morgan
 
 # Can I subscribe?
 Not currently, I'm very inexperienced with RSS Feed, so it's probably going to take a little while if not forever.
@@ -32,4 +30,8 @@ In conclusion, all credit regarding this aspect of my website belongs to him.
 
 <hr>
 
-So what are you waiting for? Go ahead and click the `Next` button in the top right corner of the page for a fresh (probably not new) post.
+So what are you waiting for? Go ahead and click the `Next` button in the top right corner of the page to find out more about me, or scroll down for a link to a fresh (probably not new) post.
+
+<!-- * 27/09/2024: [post-1]()
+* 27/09/2024: [post-2]()
+* 27/09/2024: [post-3]() -->
