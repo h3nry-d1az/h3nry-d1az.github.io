@@ -12,6 +12,8 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -20,6 +22,10 @@
 
         <script src="js/jquery-1.10.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+    
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>
         
     </head>
 
@@ -54,6 +60,25 @@
             
                 <li >
                     <a href="about/">About</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="publications/">Publications</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Posts <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="posts/2024/example/">Example 1</a>
+                        </li>
+                    
+                    </ul>
                 </li>
             
             
@@ -92,7 +117,16 @@
     <ul class="nav bs-sidenav">
       
     
-        <li class="main active"><a href="#so-i-made-myself-a-blog">So... I made myself a blog</a></li>
+        <li class="main active"><a href="#so-i-made-myself-a-blog">So I made myself a blog</a></li>
+        
+    
+        <li class="main "><a href="#what-can-i-expect">What can I expect?</a></li>
+        
+    
+        <li class="main "><a href="#can-i-subscribe">Can I subscribe?</a></li>
+        
+    
+        <li class="main "><a href="#what-a-cool-aesthetic">What a cool aesthetic!</a></li>
         
     
     
@@ -100,16 +134,31 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="so-i-made-myself-a-blog">So... I made myself a blog</h1>
-<pre><code class="language-python">:::python
-def main(args: list) -&gt; None:
-    for i in range(100):
-        print(i)
+<h1 id="so-i-made-myself-a-blog">So I made myself a blog</h1>
+<p>Hello everyone, my name is <a href="about/">Henry</a>, and welcome to <em>yet another nerdy blog about computer science and math gobbledygook</em>.</p>
+<p>This is a project made to my delight, so if you are a number enthusiast, and you like coding arguably obscure algorithms in even weirder languages, you are very welcome to jump aboard! Otherwise, I'm afraid this may not be the right place for you to stop by. But don't be sad, there are <a href="https://youtu.be/dQw4w9WgXcQ">plenty more fish in the sea</a>.</p>
+<p>As I was saying, these will be the main topics I will cover in this blog, yet not the only ones by any means! So expect this place to be a wild card in terms of content -- completely subject to whatever (and whenever) I feel like posting.</p>
+<h1 id="what-can-i-expect">What can I expect?</h1>
+<p>Well, firstly, as I said, there are no rules in this place but whatever I'm up to. However, it is true that I'm kind of a narrow-minded person, and so I have a very particular taste in the aforementioned disciplines.</p>
+<p>I'm an avid \(\TeX\) user with a preference for functional programming languages, although most of the time I keep writing everything in Python (or rewriting it in Rust). I'm also into graphics and videogames programming, but that's a story for another post...</p>
+<p>In terms of math, I do have a strange fascination with set theory, but I'm well aware that it isn't a real thing, but rather an invention mathematicians have made up in order to preserve their jobs.</p>
+<p>In conclusion, the following maxim pretty much summarizes what your thoughts should be when reading one of my articles ¯\_(ツ)_/¯:</p>
+<blockquote>
+<p>“No expectations mean there is no risk of disappointment.”</p>
+</blockquote>
+<h1 id="can-i-subscribe">Can I subscribe?</h1>
+<p>Not currently, I'm very inexperienced with RSS Feed, so it's probably going to take a little while if not forever.</p>
+<p>In the meantime, why don't you just sit back, relax, and enjoy one of my posts? (I've heard they are quite good.)</p>
+<h1 id="what-a-cool-aesthetic">What a cool aesthetic!</h1>
+<p>Thanks! It's not mine, though. The original theme was <a href="https://gitlab.com/lramage/mkdocs-bootstrap386">BOOSTRA.386</a>, by Lucas Ramage -- which I forked in order to add \(\LaTeX\) support, syntax highlighting (which, by the way, is not working, and it's driving me nuts) and other fancy functionalities tailored to my needs.</p>
+<p>I didn't choose it because of the nostalgia -- in fact, I ain't even a 90s kid -- but rather because I find cool the MS-DOS look (and not yet very popular).</p>
+<p>In conclusion, all credit regarding this aspect of my website belongs to him.</p>
+<hr>
 
-if __name__ == '__main__':
-    main([])
-</code></pre>
-<p>$$\oint_{\Gamma} \mathbf F \cdot \mathbf d \mathrm{d}t$$</p></div>
+<p>So what are you waiting for? Go ahead and click the <code>Next</code> button in the top right corner of the page to find out more about me, or scroll down for a link to a fresh (probably not new) post.</p>
+<!-- * 27/09/2024: [post-1]()
+* 27/09/2024: [post-2]()
+* 27/09/2024: [post-3]() --></div>
                 </div>
         </div>
 
