@@ -17,7 +17,8 @@ nav:
   - About: about.md
   - Publications: publications.md
   - Posts:
-    - Example 1: posts/2024/example.md
+    - "-- All --": posts/index.md
+    - Type Theory, Lean, and "perfect" mathematics: posts/2024/perfect-mathematics.md
 
 markdown_extensions:
   codehilite:
