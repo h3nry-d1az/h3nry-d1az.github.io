@@ -7,7 +7,7 @@ site_author: Henry Díaz Bordón
 copyright: © 2024 All Rights Reserved.
 
 theme:
-  name: bootstrap386
+  name: mkdocs
   custom_dir: theme/
   locale: en
   logo: assets/logo.png

@@ -1,6 +1,6 @@
 # Example Post
 
-<div class="theorem">aa</div>
-<div class="proof">bb</div>
+<div class="theorem">Stokes' theorem states that: $$\int_{c} \mathrm{d}\omega = \int_{\partial c} \omega$$</div>
+<div class="proof">The proof of this theorem is trivial and is thus left to the reader.</div>
 
-Yessir
+My average [out of a proof environment] reaction WTF :O
