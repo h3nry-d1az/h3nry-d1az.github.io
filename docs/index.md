@@ -32,4 +32,4 @@ In conclusion, all credit regarding this aspect of my website belongs to him.
 
 So what are you waiting for? Go ahead and click the `Next` button in the top right corner of the page to find out more about me, or scroll down for a link to a fresh (probably not new) post.
 
-* Sep 28, 2024: [Type Theory, Lean, and "perfect" mathematics](posts/2024/perfect-mathematics.md).
+* Sep 30, 2024: [Type Theory, Lean, and “Perfect” Mathematics](posts/2024/perfect-mathematics.md).

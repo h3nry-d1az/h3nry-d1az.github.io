@@ -18,7 +18,7 @@ nav:
   - Publications: publications.md
   - Posts:
     - "-- All --": posts/index.md
-    - Type Theory, Lean, and "perfect" mathematics: posts/2024/perfect-mathematics.md
+    - Type Theory, Lean, and “Perfect” Mathematics: posts/2024/perfect-mathematics.md
 
 markdown_extensions:
   codehilite:
