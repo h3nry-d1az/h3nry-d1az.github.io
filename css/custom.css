@@ -27,7 +27,21 @@ h2::before {
     color: yellow;
 }
 
-/* Theorems, lemmas, corollarii, ... */
+/* Post header */
+header::before {
+    content: "Published: ";
+    font-style: italic;
+    font-weight: normal;
+    color: #bbbbbb;
+}
+
+header {
+    float: right;
+    font-weight: bolder;
+    color: white;
+}
+
+/* Theorems, lemmas, corollaries, ... */
 .theorem {
     padding: 10px;
     border: 2px solid white;

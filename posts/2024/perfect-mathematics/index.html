@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Yet another nerdy blog about computer science and math gobbledygook">
+        <meta name="author" content="Henry Díaz Bordón">
+        <link rel="canonical" href="https://h3nry-d1az.github.io/posts/2024/perfect-mathematics/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Type Theory, Lean, and “Perfect” Mathematics - Henry Díaz Bordón</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="../../../css/custom.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+    
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../..">Henry Díaz Bordón</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../../..">Home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../../about/">About</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../../publications/">Publications</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Posts <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../">-- All --</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="./">Type Theory, Lean, and “Perfect” Mathematics</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                    <li >
+                        <a rel="next" href="../../">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a rel="prev" >
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                <li>
+                    <a href="https://github.com/h3nry-d1az/h3nry-d1az.github.io">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#type-theory-lean-and-perfect-mathematics">Type Theory, Lean, and “Perfect” Mathematics</a></li>
+        
+    
+        <li class="main "><a href="#the-axioms-of-zfc">The axioms of ZF(C)</a></li>
+        
+    
+        <li class="main "><a href="#the-story-behind-type-theory">The story behind type theory</a></li>
+        
+    
+        <li class="main "><a href="#type-theory-as-an-alternative">Type theory as an alternative</a></li>
+        
+    
+        <li class="main "><a href="#introducing-lean">Introducing Lean</a></li>
+        
+    
+        <li class="main "><a href="#perfect-mathematics">“Perfect” Mathematics</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="type-theory-lean-and-perfect-mathematics">Type Theory, Lean, and “Perfect” Mathematics</h1>
+<header>Sep 30, 2024</header>
+<p><br></p>
+<hr>
+
+<p>One may think of mathematics as a colossal, millennia-old Lego building; maybe not one with plentiful colors, or numerous figurines decorating the scenery, and possibly even lacking any sort of interesting shape, but surely one in which each building block corresponds to a different result or fact -- for example, you could think of Euclid's division lemma and Stokes' theorem as yet another blocks that support the weight of many others.</p>
+<p>This analogy turns out to be more helpful than it might seem at first glance, since it exposes an intriguing detail, namely, that such a construction must have some sort of foundation, some bedrock upon which the rest edifies; in logic, this translates to the fact that <em>from nothing, nothing comes!</em></p>
+<p>These primitive truths are called <strong>axioms</strong>, and are often propositions considered so obvious that they demand no proof whatsoever, hence, chosen not to be demonstrated but rather assumed as the starting point of the mathematical journey. Currently, our <em>de facto</em> set of axioms is named ZF(C), which stands for Zermelo-Fraenkel (the name of its two creators) with possibly the <a href="https://plato.stanford.edu/entries/axiom-choice/">axiom of choice</a>, which I will completely neglect during the entirety of this article (sorry AC fans, and sorry to the rest of you all for the pun).</p>
+<p>What may surprise those unseasoned with low-level math, is that ZF(C) only defines <strong>set theory</strong>, and the rest, the entirety of the vast ecosystem of mathematics, <em>is defined as sets and sets of sets</em>. Furthermore, and to the utter wonder of anyone reading this, those sets all boil down to the <strong>empty set</strong> (\(\varnothing\)), which blows my mind.</p>
+<h1 id="the-axioms-of-zfc">The axioms of ZF(C)</h1>
+<p>This is not really related to the topic of today -- and you can definitely skip it if you wish --, but just for the sake of completeness, let's talk briefly about the aforementioned axiomatic system, namely ZF -- again, I'll omit the axiom of choice --. It actually consists of <strong>infinite</strong> axioms, but don't worry, this is because it makes use of a little trick called <em>axiomatic schemes</em>, but let's not get ahead of ourselves and start from the beginning.</p>
+<p>Paradoxically, ZF does not give any definition at all for the concept of <em>set</em>, but if you think about it twice, it really doesn't have to! If I tell you that all bulls have horns, and I tell you I've got a bull, you can properly conclude that my creature has indeed horns. You do not need the subjects to do the logic, logic itself is enough!</p>
+<p>If you want an intuitive approximation of what a set is, though, just think about it as a box with (or even without) stuff, things there have no order, and you cannot have duplicates either (in contrast to real life). That's pretty much what a set is.</p>
+<p>By the way, I will be writing down the statement in both plain English and formal logic, you are not required to know the latter, but I include it for the seasoned (and because I believe that, if you stare at them for long enough, you'll eventually learn some logic, c'mon, I believe in you). Anyway, here they go:</p>
+<ol>
+<li>
+<p><strong>Axiom of Extensionality</strong>: Two sets are equal if they have the same elements: $$\forall X \forall Y \forall u (u \in X \iff u \in Y) \implies X = Y.$$ As I said, it does really seem trivial, but in the beginning there is nothing that ensures this proposition is true, so we just have to assume it.</p>
+</li>
+<li>
+<p><strong>Axiom of the empty set</strong>: There exists a set with nothing in it: $$\exists \varnothing \forall x (x \notin \varnothing).$$</p>
+</li>
+<li>
+<p><strong>Axiom of Pairing</strong>: For any two sets there exists another that contains only those two: $$\forall X \forall Y \exists P \forall a (a \in P \iff (a = X \lor a = Y)).$$</p>
+</li>
+<li>
+<p><strong>Axiom of Comprehension</strong>: If we have a set and a property, we can sieve the ones that meet it and put them in another set: $$\forall X \exists Y \forall u (u \in Y \iff (u \in X \land \phi(u)))$$</p>
+</li>
+<li>
+<p><strong>Axiom of the Power Set</strong>: For a given set, we can construct the set with all its subsets (sounds complicated but think about it twice): $$\forall X \exists \mathscr{P}X \forall u (u \in \mathscr P X \iff (\forall v (v \in u \implies v \in X))).$$</p>
+</li>
+<li>
+<p>...</p>
+</li>
+</ol>
+<p>I'm not going to list them all because it will be both boring and redundant since they are already <a href="https://mathworld.wolfram.com/Zermelo-FraenkelAxioms.html">out there on the internet</a>, and most importantly, because there is no need to :P provided this is not the main focus of this article.</p>
+<h1 id="the-story-behind-type-theory">The story behind type theory</h1>
+<p>To understand why type theory even exists, we need to go back to the late 1800s and early 1900s when the attempt to find those "building blocks" of mathematics was at its peak. By then, a mathematician named Gottlob Frege proposed his own theory, which rapidly became very popular, until another mathematician, with name Bertrand Russell, found a flaw in Frege's axioms, the infamous <strong>Russell's paradox</strong>.</p>
+<p>One of Frege's assumptions was that, given any (formal) statement, there existed a set containing all the sets that met it, so Russell said -- and here I paraphrase -- : "Oh yeah? So what about the property: '\(x \notin x\)' (\(x\) is not in \(x\))?" Which completely obliterated Frege's work. Let's think about why:</p>
+<p>For the rest of the sets, there should be no problem, either they satisfy the property or they don't, but it shouldn't be a big deal. For the big, container set, however, we have two options:</p>
+<ol>
+<li>
+<p>The big set contains itself, and thus by our assumption the big set is not included in the big set.</p>
+</li>
+<li>
+<p>The big set doesn't contain itself, and thus by our assumption the big set is included in itself.</p>
+</li>
+</ol>
+<p>One can see then that the former case leads to the latter, and the latter to the former in an infinite loop that is nothing but a <span style="font-size: 150%;">HUGE</span> contradiction. This clearly had to be fixed, so mathematicians back in the day began working on the issue.</p>
+<p>The year is 1908, and two landmark papers are published. First, Zermelo's famous proposal, but Russell had his own idea two, what nowadays is known as <strong>type theory</strong>, and now, in the XXI century is achieving its prime popularity.</p>
+<h1 id="type-theory-as-an-alternative">Type theory as an alternative</h1>
+<p>If you have ever coded in a statically typed language, you sort of know what this business is all about. We have elements, namely \(a, b, x, y, \ldots\), &nbsp;-- which correspond to variables -- that can belong to a collection named <strong>type</strong>. We denote this ownership by $$x: \mathtt{type},$$ just like you would in Rust or TypeScript. Note that functions are still a thing, so for example, $$f: \mathtt{t}_1 \rightarrow \mathtt{t}_2$$ is an object that takes an input from a type \(\mathtt{t}_1\) and returns another from a type \(\mathtt{t}_2\). Furthermore, \(\mathtt{t}_1 \rightarrow \mathtt{t}_2\) is a type as well, and so is \(\mathtt{t}_1 \times \mathtt{t}_2\), and so forth.</p>
+<p>With all this, type theory becomes a very robust framework, and the magic comes when we stop thinking of types as <em>sets</em>, and start thinking of them as <strong>propositions</strong>. Then, a member of the type will be a <strong>proof</strong> of the proposition, and the compound types \(\mathtt{t}_1 \rightarrow \mathtt{t}_2\) and \(\mathtt{t}_1 \times \mathtt{t}_2\) represent implication and conjunction respectively.</p>
+<p>It is because of this comfortable correspondence with logic that type theory has been brought out of the "building blocks" scenario to work on more profitable contexts, the most important of which are <strong>proof assistants</strong>.</p>
+<h1 id="introducing-lean">Introducing Lean</h1>
+<p>Proof assistants are a marvelous, time-saving invention, they are basically programming languages in which you write the proof of your theorem, and it spits out whether it's correct or not, using type theory for the duty.</p>
+<p>It's like having a [very pedantic] little fella next to you all the time, that ensures -- with a mathematically proven reliability -- that you are making no mistakes.</p>
+<p>They appeared quite a while ago, one of the most popular, <a href="https://coq.inria.fr/">Coq</a> (yes, that's its name, I won't argue it's quite funny), was first released back in 1989, but it is mainly because of the apparition of <a href="https://www.lean-lang.org/">Lean</a> that they are experiencing a renaissance.</p>
+<p>The latter, at least for my inexperienced taste, is far more elegant than the former, here is an example from the <a href="https://adam.math.hhu.de/#/g/leanprover-community/nng4">Natural Number Game</a> about the associativity of the natural numbers, in my opinion, the best online resource for learning this tool:</p>
+<div class="codehilite"><pre><span></span><code><span class="kd">theorem</span><span class="w"> </span><span class="n">mul_assoc</span><span class="w"> </span><span class="o">(</span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℕ</span><span class="o">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">(</span><span class="n">a</span><span class="w"> </span><span class="bp">*</span><span class="w"> </span><span class="n">b</span><span class="o">)</span><span class="w"> </span><span class="bp">*</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="bp">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="bp">*</span><span class="w"> </span><span class="o">(</span><span class="n">b</span><span class="w"> </span><span class="bp">*</span><span class="w"> </span><span class="n">c</span><span class="o">)</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="kd">by</span>
+<span class="w">    </span><span class="n">induction</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">hₖ</span>
+
+<span class="w">    </span><span class="n">repeat</span><span class="w"> </span><span class="n">rw</span><span class="w"> </span><span class="o">[</span><span class="n">mul_zero</span><span class="o">]</span>
+<span class="w">    </span><span class="n">repeat</span><span class="w"> </span><span class="n">rw</span><span class="w"> </span><span class="o">[</span><span class="n">mul_zero</span><span class="o">]</span>
+<span class="w">    </span><span class="n">rfl</span>
+
+<span class="w">    </span><span class="n">rw</span><span class="w"> </span><span class="o">[</span><span class="n">mul_succ</span><span class="o">,</span><span class="w"> </span><span class="n">mul_succ</span><span class="o">,</span><span class="w"> </span><span class="n">mul_add</span><span class="o">,</span><span class="w"> </span><span class="n">hₖ</span><span class="o">]</span>
+<span class="w">    </span><span class="n">rfl</span>
+</code></pre></div>
+
+<p>You do not need to fully understand the proof, but simply notice the built-in induction statement, the easy support for Unicode characters, and, if you use Visual Studio Code, the amazing error spotting it provides. It may seem a hard tool to master at first glance, and indeed it is not easy, but surely it is not a waste of time either.</p>
+<h1 id="perfect-mathematics">“Perfect” Mathematics</h1>
+<p>This begs the question: "Can we ensure our mathematics are flawless using proof assistants?" The answer is sadly no because of Gödel's incompleteness theorems, but what we <strong>can</strong> do is to prove that, provided our assumptions, our proofs are valid, and there's a devoted collective out there trying to accomplish this dream. The proofs already exist, we just need to formalize them!</p>
+<p>To close off, I would like to mention a project that is being carried out by the Imperial College of London, and which I do genuinely like, which is to <a href="https://github.com/ImperialCollegeLondon/FLT">formalize Fermat's Last Theorem</a> in Lean.</p></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>© 2024 All Rights Reserved.</center>
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../../../search/main.js"></script>
+    </body>
+</html>
