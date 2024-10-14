@@ -102,4 +102,5 @@ header {
     text-shadow: #fff 0px 0px 5px;
     -webkit-font-smoothing: antialiased;
     content: "∎";
+    font-size: x-large;
 }
