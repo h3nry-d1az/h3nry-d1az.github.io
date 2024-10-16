@@ -32,6 +32,5 @@ In conclusion, all credit regarding this aspect of my website belongs to him.
 
 So what are you waiting for? Go ahead and click the `Next` button in the top right corner of the page to find out more about me, or scroll down for links to some fresh (probably not new) posts.
 
-* Oct 18, 2024: [The Camel Principle: Where Brilliant Ideas Come From](posts/2024/the-camel-principle.md).
 * Oct 10, 2024: [The Golden Ratio and the Metallic Numbers](posts/2024/golden-ratio-and-metallic-numbers.md).
 * Sep 30, 2024: [Type Theory, Lean, and “Perfect” Mathematics](posts/2024/perfect-mathematics.md).
