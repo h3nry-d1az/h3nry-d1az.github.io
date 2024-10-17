@@ -14,6 +14,7 @@ I'm not yet a college graduate, but hopefully, I'll remedy that soon. However, i
 # Projects
 In the meantime, I divert myself to making (arguably) fun code projects, and my top favorites are listed below:
 
+* [Cavendish:](https://github.com/h3nry-d1az/cavendish) Yet another gravitational physics simulator.
 * [ʜɴɢɪɴ:](https://github.com/h3nry-d1az/hngin) An attempt to implement a 3D rendering engine based on pure intuition and linear algebra.
 
 If you are looking for more professional work, make sure to check out my [publications](publications.md) page, I believe you'll find what you want there.
