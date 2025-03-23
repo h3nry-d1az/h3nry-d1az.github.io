@@ -4,7 +4,7 @@ repo_url: https://github.com/h3nry-d1az/h3nry-d1az.github.io
 
 site_description: Yet another nerdy blog about computer science and math gobbledygook
 site_author: Henry Díaz Bordón
-copyright: © 2024 All Rights Reserved.
+copyright: © 2025 All Rights Reserved.
 
 theme:
   name: mkdocs
@@ -16,10 +16,7 @@ nav:
   - Home: index.md
   - About: about.md
   - Publications: publications.md
-  - Posts:
-    - "-- All --": posts/index.md
-    - The Golden Ratio and the Metallic Numbers: posts/2024/golden-ratio-and-metallic-numbers.md
-    - Type Theory, Lean, and “Perfect” Mathematics: posts/2024/perfect-mathematics.md
+  - Posts: posts/index.md
 
 markdown_extensions:
   codehilite:
