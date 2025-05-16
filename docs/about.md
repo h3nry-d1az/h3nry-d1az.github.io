@@ -17,8 +17,8 @@ In the meantime, I divert myself to making (arguably) fun code projects, and my 
 * [PNPL:](https://esolangs.org/wiki/PNPL) an esoteric language based on the fundamental theorem of arithmetic.
 * [Interferencias:](https://h3nry-d1az.github.io/interferencias/) Wave interference simulator (in <span style="color: red;">Sp</span><span style="color: yellow;">ani</span><span style="color: red;">sh</span>). 
 * [Cavendish:](https://github.com/h3nry-d1az/cavendish) Yet another gravitational physics simulator.
-* [hngin:](https://github.com/h3nry-d1az/hngin) An attempt to implement a 3D rendering engine based on pure intuition and linear algebra.
-* [hShip:](https://github.com/h3nry-d1az/rShip) A tiny ships game made of ASCII characters.
+* [hngin:](https://h3nry-d1az.itch.io/hngin) An attempt to implement a 3D rendering engine based on pure intuition and linear algebra.
+* [hShip:](https://h3nry-d1az.itch.io/hship) A tiny ships game made of ASCII characters.
 
 If you are looking for more professional work, make sure to check out my [publications](publications.md) page, I believe you'll find what you want there.
 
