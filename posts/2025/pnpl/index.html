@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Yet another nerdy blog about computer science and math gobbledygook">
+        <meta name="author" content="Henry Díaz Bordón">
+        <link rel="canonical" href="https://h3nry-d1az.github.io/posts/2025/pnpl/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>PNPL: An esoteric language based on prime numbers - Henry Díaz Bordón</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="../../../css/custom.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+    
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../..">Henry Díaz Bordón</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../../..">Home</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../../about/">About</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../../publications/">Publications</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../">Posts</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li>
+                    <a href="https://github.com/h3nry-d1az/h3nry-d1az.github.io">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+      
+    
+        <li class="main active"><a href="#pnpl-an-esoteric-language-based-on-prime-numbers">PNPL: An esoteric...</a></li>
+        
+    
+        <li class="main "><a href="#a-story-from-three-years-ago">A story from thre...</a></li>
+        
+    
+        <li class="main "><a href="#a-flawless-reimagination">A flawless reimagination</a></li>
+        
+    
+        <li class="main "><a href="#final-thoughts">Final thoughts</a></li>
+        
+    
+    
+    </ul>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="pnpl-an-esoteric-language-based-on-prime-numbers">PNPL: An esoteric language based on prime numbers</h1>
+<header>May 16, 2025</header>
+<p><br></p>
+<hr>
+
+<p>I have finally made a programming language, but it is not conventional by any means. The internet is full of Python and Rust clones which, although they try to bring some new twists to the table, in practice turn out to be a worse choice than those who they copy; and it is such a shame because it makes one think that everything has already been invented and there is no room for innovation at all, despite the tremendous work their creators have devoted.</p>
+<p>However, there is still a very geek niche named <em>esoteric languages</em> -- its name references their obscurity and weirdness -- where almost anything can be found. Do you need a minimal, Turing-complete language with as few as 4 instructions? <a href="https://esolangs.org/wiki/P%E2%80%B2%E2%80%B2">Here it is what you were looking for</a>. You have been trying to find a C-like language that uses Arnold Schwarzenegger's best quotes as keywords? <a href="https://esolangs.org/wiki/ArnoldC">They have got you suited</a>. Overall, one will not find as much creativity as in the <a href="https://esolangs.org/wiki/Main_Page">Esolangs wiki</a>, where the main goal is just to achieve Turing-completeness, and everything else are unnecessary abstractions.</p>
+<p>That is exactly the reason why today I am announcing PNPL, an esoteric language that revolves around prime numbers and the uniqueness of their products.</p>
+<h1 id="a-story-from-three-years-ago">A story from three years ago</h1>
+<p>Actually, I might have just told a white lie, because I did not come up with its core idea a few days ago, but rather the concept of a language based on the fundamental theorem of arithmetic (FTA from now on) has been coming to my mind at least since 2022. This was originally my final project for the ESTALMAT program, and was named pirho (\(\Pi_\rho\)), for <em>product (of primes)</em>.</p>
+<p>In \(\Pi_\rho\), programs are made up of a list of numbers separated by spaces, where each one represents a different instruction. Now, each instruction is composed of an opcode -- denoted by a prime number --, and a series of arguments, all multiplied together so that they can be recovered by the FTA. For example, here is a valid \(\Pi_\rho\) program: \[959\:11\:89\:101\:10349\quad\implies\quad 7\cdot 137\: 11 \: 89\: 101\: 79\cdot 131 \]</p>
+<p>The first two numbers store an input character from the user in memory (analog to C's <code>getch</code>), and prints it if it differs from 0x00, otherwise it repeats the process from the beginning.</p>
+<p>In total, \(\Pi_\rho\) had a total of 30 different instructions plus 6 special registers in order to make the programming experience less harsh, a decission that does not make much sense when put in perspective considering it was ultimately an esoteric language. \(\Pi_\rho\)'s syntax was inconvenient as well, because, for example, the operation \(7\cdot 22\) would be interpreted as \(2\cdot 77\) by the interpreter, as a result of the commutativity of integer multiplication.</p>
+<p>However, the original paper describing \(\Pi_\rho\) is not available on the internet, and neither is the interpreter I made.</p>
+<h1 id="a-flawless-reimagination">A flawless reimagination</h1>
+<p>Thus, PNPL is meant to be a recreation of the concept above, but aiming at the following:</p>
+<ul>
+<li>A consistent syntax, with no <em>misinterpreted operations</em>.</li>
+<li>Every possible program must be a single number, not a list of integers.</li>
+</ul>
+<p>And it was indeed possible to achieve! I will not really repeat myself because I have already described the functioning twice (in both the <a href="https://github.com/h3nry-d1az/pnpl">GitHub repository</a> and <a href="https://esolangs.org/wiki/PNPL">Esolangs wiki</a>), but I will summarize it as a <a href="https://plato.stanford.edu/entries/goedel-incompleteness/sup1.html">Goedel numbering</a> frontend for a Brainfuck interpreter, this last peculiarity grants Turing-completeness to the language.</p>
+<h1 id="final-thoughts">Final thoughts</h1>
+<p>Overall, it has been quite a fun project to make and the culmination of an intrusive thought that has spanned for a few years.</p></div>
+                </div>
+        </div>
+
+    <hr>
+    <footer class="container">
+        
+        <center>© 2025 All Rights Reserved.</center>
+        
+        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+    </footer>
+        <script src="../../../../../../search/main.js"></script>
+    </body>
+</html>
