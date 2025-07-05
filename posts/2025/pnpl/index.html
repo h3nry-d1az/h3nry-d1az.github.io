@@ -8,7 +8,7 @@
         <meta name="author" content="Henry Díaz Bordón">
         <link rel="canonical" href="https://h3nry-d1az.github.io/posts/2025/pnpl/">
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>PNPL: An esoteric language based on prime numbers - Henry Díaz Bordón</title>
+        <title>PNPL: An Esoteric Language Based on Prime Numbers - Henry Díaz Bordón</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/bootstrap-theme.min.css" rel="stylesheet">
@@ -100,13 +100,13 @@
     <ul class="nav bs-sidenav">
       
     
-        <li class="main active"><a href="#pnpl-an-esoteric-language-based-on-prime-numbers">PNPL: An esoteric...</a></li>
+        <li class="main active"><a href="#pnpl-an-esoteric-language-based-on-prime-numbers">PNPL: An Esoteric...</a></li>
         
     
         <li class="main "><a href="#a-story-from-three-years-ago">A story from thre...</a></li>
         
     
-        <li class="main "><a href="#a-flawless-reimagination">A flawless reimagination</a></li>
+        <li class="main "><a href="#a-better-reimagination">A better reimagination</a></li>
         
     
         <li class="main "><a href="#final-thoughts">Final thoughts</a></li>
@@ -117,7 +117,7 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="pnpl-an-esoteric-language-based-on-prime-numbers">PNPL: An esoteric language based on prime numbers</h1>
+<h1 id="pnpl-an-esoteric-language-based-on-prime-numbers">PNPL: An Esoteric Language Based on Prime Numbers</h1>
 <header>May 16, 2025</header>
 <p><br></p>
 <hr>
@@ -126,12 +126,12 @@
 <p>However, there is still a very geek niche named <em>esoteric languages</em> -- its name references their obscurity and weirdness -- where almost anything can be found. Do you need a minimal, Turing-complete language with as few as 4 instructions? <a href="https://esolangs.org/wiki/P%E2%80%B2%E2%80%B2">Here it is what you were looking for</a>. You have been trying to find a C-like language that uses Arnold Schwarzenegger's best quotes as keywords? <a href="https://esolangs.org/wiki/ArnoldC">They have got you suited</a>. Overall, one will not find as much creativity as in the <a href="https://esolangs.org/wiki/Main_Page">Esolangs wiki</a>, where the main goal is just to achieve Turing-completeness, and everything else are unnecessary abstractions.</p>
 <p>That is exactly the reason why today I am announcing PNPL, an esoteric language that revolves around prime numbers and the uniqueness of their products.</p>
 <h1 id="a-story-from-three-years-ago">A story from three years ago</h1>
-<p>Actually, I might have just told a white lie, because I did not come up with its core idea a few days ago, but rather the concept of a language based on the fundamental theorem of arithmetic (FTA from now on) has been coming to my mind at least since 2022. This was originally my final project for the ESTALMAT program, and was named pirho (\(\Pi_\rho\)), for <em>product (of primes)</em>.</p>
+<p>Actually, I might have just told a white lie, because I did not come up with its core idea a few days ago, but rather the concept of a language based on the fundamental theorem of arithmetic (FTA from now on) has been coming to my mind at least since 2022. This was originally the final project me and my friends Adam and Alessandro made for the ESTALMAT program, and was named pirho (\(\Pi_\rho\)), for <em>product (of primes)</em>.</p>
 <p>In \(\Pi_\rho\), programs are made up of a list of numbers separated by spaces, where each one represents a different instruction. Now, each instruction is composed of an opcode -- denoted by a prime number --, and a series of arguments, all multiplied together so that they can be recovered by the FTA. For example, here is a valid \(\Pi_\rho\) program: \[959\:11\:89\:101\:10349\quad\implies\quad 7\cdot 137\: 11 \: 89\: 101\: 79\cdot 131 \]</p>
 <p>The first two numbers store an input character from the user in memory (analog to C's <code>getch</code>), and prints it if it differs from 0x00, otherwise it repeats the process from the beginning.</p>
 <p>In total, \(\Pi_\rho\) had a total of 30 different instructions plus 6 special registers in order to make the programming experience less harsh, a decission that does not make much sense when put in perspective considering it was ultimately an esoteric language. \(\Pi_\rho\)'s syntax was inconvenient as well, because, for example, the operation \(7\cdot 22\) would be interpreted as \(2\cdot 77\) by the interpreter, as a result of the commutativity of integer multiplication.</p>
 <p>However, the original paper describing \(\Pi_\rho\) is not available on the internet, and neither is the interpreter I made.</p>
-<h1 id="a-flawless-reimagination">A flawless reimagination</h1>
+<h1 id="a-better-reimagination">A better reimagination</h1>
 <p>Thus, PNPL is meant to be a recreation of the concept above, but aiming at the following:</p>
 <ul>
 <li>A consistent syntax, with no <em>misinterpreted operations</em>.</li>
@@ -148,7 +148,7 @@
         
         <center>© 2025 All Rights Reserved.</center>
         
-        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+        <center>Website built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
     </footer>
         <script src="../../../../../../search/main.js"></script>
     </body>

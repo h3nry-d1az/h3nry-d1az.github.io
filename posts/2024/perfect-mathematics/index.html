@@ -8,7 +8,7 @@
         <meta name="author" content="Henry Díaz Bordón">
         <link rel="canonical" href="https://h3nry-d1az.github.io/posts/2024/perfect-mathematics/">
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Type Theory, Lean, and “Perfect” Mathematics - Henry Díaz Bordón</title>
+        <title>Type Theory, Lean, and "Perfect" Mathematics - Henry Díaz Bordón</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/bootstrap-theme.min.css" rel="stylesheet">
@@ -115,7 +115,7 @@
         <li class="main "><a href="#introducing-lean">Introducing Lean</a></li>
         
     
-        <li class="main "><a href="#perfect-mathematics">“Perfect” Mathematics</a></li>
+        <li class="main "><a href="#perfect-mathematics">"Perfect" Mathematics</a></li>
         
     
     
@@ -123,7 +123,7 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="type-theory-lean-and-perfect-mathematics">Type Theory, Lean, and “Perfect” Mathematics</h1>
+<h1 id="type-theory-lean-and-perfect-mathematics">Type Theory, Lean, and "Perfect" Mathematics</h1>
 <header>Sep 30, 2024</header>
 <p><br></p>
 <hr>
@@ -145,7 +145,7 @@
 <p><strong>Axiom of the empty set</strong>: There exists a set with nothing in it: $$\exists \varnothing \forall x (x \notin \varnothing).$$</p>
 </li>
 <li>
-<p><strong>Axiom of Pairing</strong>: For any two sets there exists another that contains only those two: $$\forall X \forall Y \exists P \forall a (a \in P \iff (a = X \lor a = Y)).$$</p>
+<p><strong>Axiom of Pairing</strong>: For any two sets there exists another that contains only those two: $$\forall X \forall Y \exists \{X,Y\} \forall a (a \in \{X,Y\} \iff (a = X \lor a = Y)).$$</p>
 </li>
 <li>
 <p><strong>Axiom of Comprehension</strong>: If we have a set and a property, we can sieve the ones that meet it and put them in another set: $$\forall X \exists Y \forall u (u \in Y \iff (u \in X \land \phi(u)))$$</p>
@@ -157,7 +157,7 @@
 <p>...</p>
 </li>
 </ol>
-<p>I'm not going to list them all because it will be both boring and redundant since they are already <a href="https://mathworld.wolfram.com/Zermelo-FraenkelAxioms.html">out there on the internet</a>, and most importantly, because there is no need to :P provided this is not the main focus of this article.</p>
+<p>I'm not going to list them all because it will be both boring and redundant since they are already <a href="https://mathworld.wolfram.com/Zermelo-FraenkelAxioms.html">out there on the internet</a>, and most importantly, because there is no need to provided this is not the main focus of this article.</p>
 <h1 id="the-story-behind-type-theory">The story behind type theory</h1>
 <p>To understand why type theory even exists, we need to go back to the late 1800s and early 1900s when the attempt to find those "building blocks" of mathematics was at its peak. By then, a mathematician named Gottlob Frege proposed his own theory, which rapidly became very popular, until another mathematician, with name Bertrand Russell, found a flaw in Frege's axioms, the infamous <strong>Russell's paradox</strong>.</p>
 <p>One of Frege's assumptions was that, given any (formal) statement, there existed a set containing all the sets that met it, so Russell said -- and here I paraphrase -- : "Oh yeah? So what about the property: '\(x \notin x\)' (\(x\) is not in \(x\))?" Which completely obliterated Frege's work. Let's think about why:</p>
@@ -193,7 +193,7 @@
 </code></pre></div>
 
 <p>You do not need to fully understand the proof, but simply notice the built-in induction statement, the easy support for Unicode characters, and, if you use Visual Studio Code, the amazing error spotting it provides. It may seem a hard tool to master at first glance, and indeed it is not easy, but surely it is not a waste of time either.</p>
-<h1 id="perfect-mathematics">“Perfect” Mathematics</h1>
+<h1 id="perfect-mathematics">"Perfect" Mathematics</h1>
 <p>This begs the question: "Can we ensure our mathematics are flawless using proof assistants?" The answer is sadly no because of Gödel's incompleteness theorems, but what we <strong>can</strong> do is to prove that, provided our assumptions, our proofs are valid, and there's a devoted collective out there trying to accomplish this dream. The proofs already exist, we just need to formalize them!</p>
 <p>To close off, I would like to mention a project that is being carried out by the Imperial College of London, and which I do genuinely like, which is to <a href="https://github.com/ImperialCollegeLondon/FLT">formalize Fermat's Last Theorem</a> in Lean.</p></div>
                 </div>
@@ -204,7 +204,7 @@
         
         <center>© 2025 All Rights Reserved.</center>
         
-        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
+        <center>Website built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
     </footer>
         <script src="../../../../../../search/main.js"></script>
     </body>
