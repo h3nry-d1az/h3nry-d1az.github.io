@@ -35,19 +35,19 @@ Suppose we have two differently-sized rods, which we'll call \\(a\\) to the long
         \node[circle,fill, inner sep=1.5pt, color=blue] (AB_3) at (-2, -2.62) {};
         \draw[color = red] (AB_1) -- (AB_2);
         \draw[color = blue] (AB_2) -- (AB_3);
-        \node at (-1.75, -0.90) {$a$};
-        \node at (-1.75, -1.73) {$b$};
-        \node at (-1.75, -1.31) {$+$};
+        \node[white] at (-1.75, -0.90) {$a$};
+        \node[white] at (-1.75, -1.73) {$b$};
+        \node[white] at (-1.75, -1.31) {$+$};
 
         \node[circle,fill, inner sep=1.5pt, color=red] (A_1) at (0, -0.5) {};
         \node[circle,fill, inner sep=1.5pt, color=red] (A_2) at (0, -2.12) {};
         \draw[red] (A_1) -- (A_2);
-        \node at (0.25, -1.31) {$a$};
+        \node[white] at (0.25, -1.31) {$a$};
 
         \node[circle,fill, inner sep=1.5pt, color=blue] (B_1) at (2, -0.81) {};
         \node[circle,fill, inner sep=1.5pt, color=blue] (B_2) at (2, -1.81) {};
         \draw[blue] (B_1) -- (B_2);
-        \node at (2.25, -1.31) {$b$};
+        \node[white] at (2.25, -1.31) {$b$};
     \end{tikzpicture}
 </script>
 </div>
@@ -111,10 +111,10 @@ Recall the geometric definition for a golden proportion we came up with, and let
         \node (AB_2_null) at (3.24, 0) {};
         \draw[color = red, fill=red!35] (A_1.center) -- (A_2.center) -- (AB_1.center) -- (AB_null.center) -- cycle;
         \draw[color = blue, fill=blue!35] (AB_1.center) -- (AB_2.center) -- (AB_2_null.center) -- (AB_null.center) -- cycle;
-        \node at (1, -2.39) {$a$};
-        \node at (2.62, -2.35) {$b$};
-        \node at (2, -2.35) {$+$};
-        \node at (-0.35, -1) {$a$};
+        \node[white] at (1, -2.39) {$a$};
+        \node[white] at (2.62, -2.35) {$b$};
+        \node[white] at (2, -2.35) {$+$};
+        \node[white] at (-0.35, -1) {$a$};
     \end{tikzpicture}
 </script>
 </div>
@@ -132,19 +132,19 @@ Let's now detach the blue rectangle from the former and see what happens:
             \node (AB_2_null) at (3.24, 0) {};
             \draw[color = red, fill=red!35] (A_1.center) -- (A_2.center) -- (AB_1.center) -- (AB_null.center) -- cycle;
             \draw[color = blue, fill=blue!35] (AB_1.center) -- (AB_2.center) -- (AB_2_null.center) -- (AB_null.center) -- cycle;
-            \node at (1, -2.39) {$a$};
-            \node at (2.62, -2.35) {$b$};
-            \node at (2, -2.35) {$+$};
-            \node at (-0.35, -1) {$a$};
+            \node[white] at (1, -2.39) {$a$};
+            \node[white] at (2.62, -2.35) {$b$};
+            \node[white] at (2, -2.35) {$+$};
+            \node[white] at (-0.35, -1) {$a$};
 
-            \node at (4.24, -1) {$\longrightarrow$};
+            \node[white] at (4.24, -1) {$\longrightarrow$};
             \node[circle,fill, inner sep=1.5pt, color=blue] (B_1) at (5.59, -0.38) {};
             \node[circle,fill, inner sep=1.5pt, color=blue] (B_2) at (5.59, -1.62) {};
             \node (B_4) at (7.59, -0.38) {};
             \node[circle,fill, inner sep=1.5pt, color=blue] (B_3) at (7.59, -1.62) {};
             \draw[color = blue, fill=blue!35] (B_1.center) -- (B_2.center) -- (B_3.center) -- (B_4.center) -- cycle;
-            \node at (5.24, -1) {$b$};
-            \node at (6.59, -1.97) {$a$};
+            \node[white] at (5.24, -1) {$b$};
+            \node[white] at (6.59, -1.97) {$a$};
         \end{tikzpicture}
 </script>
 </div>
@@ -171,10 +171,10 @@ By our previous theorem, something *exactly* equal is impossible, yet we can app
             \node (AB_2_null) at (5.82, 0) {};
             \draw[color = red, fill=red!35] (A_1.center) -- (A_2.center) -- (AB_1.center) -- (AB_null.center) -- cycle;
             \draw[color = blue, fill=blue!35] (AB_1.center) -- (AB_2.center) -- (AB_2_null.center) -- (AB_null.center) -- cycle;
-            \node at (2.41, -2.76) {$2a$};
-            \node at (5.32, -2.76) {$b$};
-            \node at (4.82, -2.76) {$+$};
-            \node at (-0.35, -1.205) {$a$};
+            \node[white] at (2.41, -2.76) {$2a$};
+            \node[white] at (5.32, -2.76) {$b$};
+            \node[white] at (4.82, -2.76) {$+$};
+            \node[white] at (-0.35, -1.205) {$a$};
         \end{tikzpicture}
 </script>
 </div>
@@ -293,3 +293,13 @@ There's a quote from the great mathematician J. Henri Poincaré which, from my p
 And it is true that the spirit of a mathematician isn't fulfilled with discovering an interesting property, but craves to explore the limits of their finding, thus expanding it in such a way that what was earlier thought as a whole, now it isn't but a special case of a more robust theory, which englobes entities formerly unrelated but now connected.
 
 This process receives the name of *abstraction* or *generalization* and, although in principle can appear confusing and useless, it is one of the more powerful tools mathematicians have at their disposal and, more importantly, the fire that fuels their work.
+
+# References
+
+<p class="hangingindent">
+Weisstein, E.W. (Sept. 2004). <em>Silver Ratio, Wolfram MathWorld</em>. Available at: <a href="https://mathworld.wolfram.com/SilverRatio.html">https://mathworld.wolfram.com/SilverRatio.html</a>. (Accessed on September 4, 2024).
+</p>
+
+<p class="hangingindent">
+Yee, A.J. (Feb. 2019). <em>Golden Ratio, y-cruncher - A Multi-Threaded Pi-Program</em>. Available at: <a href="http://www.numberworld.org/digits/GoldenRatio/">http://www.numberworld.org/digits/GoldenRatio/</a>. (Accessed on September 4, 2024).
+</p>

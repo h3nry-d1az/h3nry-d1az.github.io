@@ -1,4 +1,4 @@
-# Type Theory, Lean, and “Perfect” Mathematics
+# Type Theory, Lean, and "Perfect" Mathematics
 
 <header>Sep 30, 2024</header>
 <br>
@@ -25,7 +25,7 @@ By the way, I will be writing down the statement in both plain English and forma
 
 2. **Axiom of the empty set**: There exists a set with nothing in it: $$\exists \varnothing \forall x (x \notin \varnothing).$$
 
-2. **Axiom of Pairing**: For any two sets there exists another that contains only those two: $$\forall X \forall Y \exists P \forall a (a \in P \iff (a = X \lor a = Y)).$$
+2. **Axiom of Pairing**: For any two sets there exists another that contains only those two: $$\forall X \forall Y \exists \\{X,Y\\} \forall a (a \in \\{X,Y\\} \iff (a = X \lor a = Y)).$$
 
 3. **Axiom of Comprehension**: If we have a set and a property, we can sieve the ones that meet it and put them in another set: $$\forall X \exists Y \forall u (u \in Y \iff (u \in X \land \phi(u)))$$
 
@@ -33,7 +33,7 @@ By the way, I will be writing down the statement in both plain English and forma
 
 6. ...
 
-I'm not going to list them all because it will be both boring and redundant since they are already [out there on the internet](https://mathworld.wolfram.com/Zermelo-FraenkelAxioms.html), and most importantly, because there is no need to :P provided this is not the main focus of this article.
+I'm not going to list them all because it will be both boring and redundant since they are already [out there on the internet](https://mathworld.wolfram.com/Zermelo-FraenkelAxioms.html), and most importantly, because there is no need to provided this is not the main focus of this article.
 
 # The story behind type theory
 To understand why type theory even exists, we need to go back to the late 1800s and early 1900s when the attempt to find those "building blocks" of mathematics was at its peak. By then, a mathematician named Gottlob Frege proposed his own theory, which rapidly became very popular, until another mathematician, with name Bertrand Russell, found a flaw in Frege's axioms, the infamous **Russell's paradox**.
@@ -82,7 +82,7 @@ theorem mul_assoc (a b c : ℕ) : (a * b) * c = a * (b * c) := by
 
 You do not need to fully understand the proof, but simply notice the built-in induction statement, the easy support for Unicode characters, and, if you use Visual Studio Code, the amazing error spotting it provides. It may seem a hard tool to master at first glance, and indeed it is not easy, but surely it is not a waste of time either.
 
-# “Perfect” Mathematics
+# "Perfect" Mathematics
 This begs the question: "Can we ensure our mathematics are flawless using proof assistants?" The answer is sadly no because of Gödel's incompleteness theorems, but what we **can** do is to prove that, provided our assumptions, our proofs are valid, and there's a devoted collective out there trying to accomplish this dream. The proofs already exist, we just need to formalize them!
 
 To close off, I would like to mention a project that is being carried out by the Imperial College of London, and which I do genuinely like, which is to [formalize Fermat's Last Theorem](https://github.com/ImperialCollegeLondon/FLT) in Lean.

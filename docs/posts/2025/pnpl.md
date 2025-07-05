@@ -1,4 +1,4 @@
-# PNPL: An esoteric language based on prime numbers
+# PNPL: An Esoteric Language Based on Prime Numbers
 
 <header>May 16, 2025</header>
 <br>
@@ -12,7 +12,7 @@ That is exactly the reason why today I am announcing PNPL, an esoteric language 
 
 # A story from three years ago
 
-Actually, I might have just told a white lie, because I did not come up with its core idea a few days ago, but rather the concept of a language based on the fundamental theorem of arithmetic (FTA from now on) has been coming to my mind at least since 2022. This was originally my final project for the ESTALMAT program, and was named pirho (\\(\\Pi_\\rho\\)), for *product (of primes)*.
+Actually, I might have just told a white lie, because I did not come up with its core idea a few days ago, but rather the concept of a language based on the fundamental theorem of arithmetic (FTA from now on) has been coming to my mind at least since 2022. This was originally the final project me and my friends Adam and Alessandro made for the ESTALMAT program, and was named pirho (\\(\\Pi_\\rho\\)), for *product (of primes)*.
 
 In \\(\\Pi_\\rho\\), programs are made up of a list of numbers separated by spaces, where each one represents a different instruction. Now, each instruction is composed of an opcode -- denoted by a prime number --, and a series of arguments, all multiplied together so that they can be recovered by the FTA. For example, here is a valid \\(\\Pi_\\rho\\) program: \\[959\\:11\\:89\\:101\\:10349\\quad\\implies\\quad 7\\cdot 137\\: 11 \\: 89\\: 101\\: 79\\cdot 131 \\]
 
@@ -22,7 +22,7 @@ In total, \\(\\Pi_\\rho\\) had a total of 30 different instructions plus 6 speci
 
 However, the original paper describing \\(\\Pi_\\rho\\) is not available on the internet, and neither is the interpreter I made.
 
-# A flawless reimagination
+# A better reimagination
 
 Thus, PNPL is meant to be a recreation of the concept above, but aiming at the following:
 

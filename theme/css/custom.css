@@ -64,13 +64,13 @@ header {
     font-weight: bold;
 }
 
-.corollarium {
+.corollary {
     padding: 10px;
     border: 2px solid white;
 }
 
-.corollarium::before {
-    content: "Corollarium: ";
+.corollary::before {
+    content: "Corollary: ";
     color: white;
     font-weight: bold;
 }
@@ -82,6 +82,17 @@ header {
 
 .definition::before {
     content: "Definition: ";
+    color: white;
+    font-weight: bold;
+}
+
+.problem {
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.problem::before {
+    content: "Problem: ";
     color: white;
     font-weight: bold;
 }
@@ -103,4 +114,9 @@ header {
     -webkit-font-smoothing: antialiased;
     content: "∎";
     font-size: x-large;
+}
+
+.hangingindent {
+  padding-left: 22px ;
+  text-indent: -22px ;
 }
