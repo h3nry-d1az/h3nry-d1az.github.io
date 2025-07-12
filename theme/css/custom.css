@@ -116,6 +116,25 @@ header {
     font-size: x-large;
 }
 
+.solution {
+    padding: 10px;
+}
+
+.solution::before {
+    content: "Solution: ";
+    color: white;
+    font-style: italic;
+}
+
+.solution::after {
+    color: black;
+    float: right;
+    text-shadow: #fff 0px 0px 5px;
+    -webkit-font-smoothing: antialiased;
+    content: "∎";
+    font-size: x-large;
+}
+
 .hangingindent {
   padding-left: 22px ;
   text-indent: -22px ;

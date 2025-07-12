@@ -24,10 +24,10 @@ In the meantime, why don't you just sit back, relax, and enjoy one of my posts? 
 # What a cool aesthetic!
 Thanks! It's not mine, though. The original theme was [BOOSTRA.386](https://gitlab.com/lramage/mkdocs-bootstrap386), by Lucas Ramage -- which I forked in order to add \\(\LaTeX\\) support, syntax highlighting (which, by the way, is not working, and it's driving me nuts) and other fancy functionalities tailored to my needs.
 
-I didn't choose it because of the nostalgia -- in fact, I ain't even a 90s kid -- but rather because I find cool the MS-DOS look (and not yet very popular).
+I didn't choose it because of the nostalgia -- in fact, I'm not even a 90s kid -- but rather because I find cool the MS-DOS look (and not yet very popular).
 
 In conclusion, all credit regarding this aspect of my website belongs to him.
 
 <hr>
 
-So what are you waiting for? Go ahead and click the `Next` button in the top right corner of the page to find out more about me, or check out the `Posts` section for some fresh (probably not new) posts.
+So what are you waiting for? Go ahead and click the `Next` button in the top right corner of the page to find out more about me, or check out the `Posts` section for some fresh (probably not new though) posts.

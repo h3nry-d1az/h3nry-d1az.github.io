@@ -4,6 +4,7 @@ Here are all the articles I have posted so far, organized by years:
 
 # 2025
 
+* Jul 12, 2025: [A Petition for the RSME.](2025/a-petition-for-the-rsme.md)
 * Jul 5, 2025: [99.9…% of Geometers Cannot Solve This Problem!](2025/squaring-the-circle.md)
 * May 16, 2025: [PNPL: An Esoteric Language Based on Prime Numbers.](2025/pnpl.md)
 
