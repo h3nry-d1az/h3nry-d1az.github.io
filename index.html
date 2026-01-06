@@ -26,11 +26,15 @@
             text-decoration: none;
             color: teal;
         }
-        h1
+        strong
         {
             text-decoration: underline;
             text-decoration-style: dotted;
-            text-decoration-thickness: 2px;
+            text-decoration-thickness: 1px;
+        }
+        div
+        {
+            break-inside: avoid;
         }
         li + li
         {
@@ -42,9 +46,9 @@
         }
         .twocols
         {
-            display: flex;
-            align-items: center;
-            gap: 20px;
+            column-count: 2;
+            column-gap: 20px;
+            column-rule: 1px dotted teal;
         }
         .link
         {
@@ -63,46 +67,21 @@
             </a></p>
         </div>
 
-        <div align="right" style="flex: 2;">
-        <img src="banner.png" width="60%" alt="Riemann sum of sin(x)/x, from 0 to 8*PI.">
+        <div>
+            <ul>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/henry-db/" class="link">
+                    henry-db</a>.</li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/h3nry-d1az" class="link">
+                    h3nry-d1az</a>.</li>
+                <li><strong>Codeforces:</strong> <a href="https://codeforces.com/profile/henry-db" class="link">
+                    henry-db</a>.</li>
+                <li><strong>YouTube:</strong> <a href="https://www.youtube.com/@henry-db" class="link">
+                    @henry-db</a>.</li>
+                <li><strong>Email:</strong>
+                    <a href="mailto:henrydiazbordon@gmail.com" class="link"> 
+                        henrydiazbordon@gmail.com</a>.</li>
+            </ul>
         </div>
     </div>
-
-    <br>
-    <hr style="width: 75%; border: 1px dotted teal;">
-    <br>
-
-    <h1>About me</h1>
-    <p>I am a very passionate programmer and mathematics enthusiast, currently based in Spain.
-        My best skills are Python and C++, but I still like trying new technologies for some of my projects.
-        In my spare time I also sometimes record <a href="https://www.youtube.com/@henry-db">YouTube videos</a>
-        and write <a href="https://h3nry-d1az.github.io/column/">blog posts</a> on my main interests.</p>
-
-    <h1>Projects</h1>
-    <p>Here is a list of the most remarkable projects I have worked on, grouped in terms of belonging and ordered from most to least important.</p>
-
-    <h2>Personal</h2>
-    <ul>
-        <li><a href="https://esolangs.org/wiki/PNPL">PNPL:</a> An esoteric language based on the fundamental theorem of arithmetic.</li>
-        <li><a href="https://github.com/h3nry-d1az/hngin" style="font-variant-caps: all-small-caps;">hngin:</a>
-            An attempt to implement a 3D rendering engine from scratch using basic linear algebra.</li>
-        <li><a href="https://github.com/h3nry-d1az/cavendish">Cavendish:</a> Yet another gravitational physics simulator.</li>
-    </ul>
-
-    <h2>Other contributions</h2>
-    <ul>
-        <li><a href="https://staruc3m.com/r-d/">Stardust:</a> Rocket simulator built by STAR (Student Team for Aerospace and Rocketry) UC3M.</li>
-    </ul>
-
-    <h1>Contact</h1>
-    <ul>
-        <li><strong>Email address:</strong>
-            <a href="mailto:henrydiazbordon@gmail.com" class="link"> 
-                henrydiazbordon@gmail.com</a>.</li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/h3nry-d1az" class="link">
-            h3nry-d1az</a>.</li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/henry-db/" class="link">
-            henry-db</a>.</li>
-    </ul>
 </body>
 </html>
